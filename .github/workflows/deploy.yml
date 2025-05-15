@@ -18,12 +18,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3  # <-- Add this line
+
+      - name: Check contents of src
+        run: ls -al src  # optional debug step
+
       - name: Archive build artifacts
         uses: actions/upload-artifact@v4
         with:
           name: website-artifacts
           include-hidden-files: true
           path: src
+
 
   deploy:
     runs-on: ubuntu-latest
