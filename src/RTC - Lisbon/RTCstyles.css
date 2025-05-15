@@ -1,0 +1,11 @@
+
+
+.rtc-card{
+  border-left: 1px solid white;
+  padding: 2px;
+  width: fit-content;
+}
+
+#location {
+  font-weight: bold;
+}

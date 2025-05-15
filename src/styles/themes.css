@@ -1,0 +1,7 @@
+:root {
+    --background: black;
+    --foreground: white;
+    --primary: hsl(266, 100%, 70%);
+    --padding1: 24px;
+    --padding2: 2px;
+}

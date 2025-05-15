@@ -1,5 +1,57 @@
+@import url(base.css);
+@import url(themes.css);
+
 body {
-  background-color: white;
-  color: black;
-  font-family: Verdana;
+  background-color: var(--background);
+  color: var(--foreground);
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid white;
+font-family: "MonospaceKrypton";
 }
+
+.name {
+  border-color: white;
+  border-right: 1px solid;
+  border-left: none;
+  padding-left: var(--padding1);
+  padding-right: var(--padding1);
+  padding-bottom: var(--padding2);
+  padding-top: var(--padding2) ;
+}
+.navbar-l1{
+  display: flex;
+  gap: 6px;
+  justify-content: space-between;
+  width: 100%;
+border-bottom: 1px solid white;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.pfp{
+  border: 1px solid white;
+  border-top: none;
+  border-left: none;
+}
+.top-bar-btn{
+  flex: auto;
+  padding: 2px;
+  border-color: white;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  color: white;
+  text-decoration: none;
+}
+
+.top-bar-btn:hover{
+  color: var(--primary);
+  font-weight: bold;
+  border-color: var(--primary);
+  
+}
+

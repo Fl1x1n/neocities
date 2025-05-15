@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'MonospaceKrypton';
+  src: url('../public/fonts/MonaspaceKryptonVarVF[wght\,wdth\,slnt].woff2') format('woff2-variations'),
+       url('../public/fonts/MonaspaceKryptonVarVF[wght\,wdth\,slnt].woff') format('woff-variations');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+html {
+  scroll-behavior: smooth;
+  hyphens: auto;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  font-style: italic;
+}
+
+iframe {
+  border: 0;
+}
+
+input,
+button {
+  font: inherit;
+  background: none;
+  border: none;
+}
+
+a {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-overflow {
+  overflow: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
