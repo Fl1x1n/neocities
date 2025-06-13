@@ -8,7 +8,7 @@ function updateClock() {
   clockElement.textContent = lisbonTime;
 }
 
-updateClock(); // Initial call
-setInterval(updateClock, 60* 1000); 
+updateClock(); 
+setInterval(updateClock, 59* 1000); 
 
 
